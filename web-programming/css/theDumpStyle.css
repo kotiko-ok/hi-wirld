@@ -1,0 +1,89 @@
+/*Обнуление*/
+* {
+	/*выбор абсолютно всех тегов*/
+	padding: 0; /*внутренний отступ 0*/
+	margin: 0; /*наружний отступ 0*/
+	border: 0; /*бортик (граница) 0*/
+}
+*,
+*:before,
+*:after {
+	/*выбор всего, а так же выбор всех before и after*/
+	-moz-box-sizing: border-box; /*изменяет алгоритм вычисления ширины (перестаёт учитывать отступы марджин(наружний отступ) и падинг(внутрение отступы))*/
+	-webkit-box-sizing: border-box; /*изменяет алгоритм вычисления вывсоты (перестаёт учитывать отступы марджин(наружний отступ) и падинг(внутрение отступы))*/
+	box-sizing: border-box; /*изменяет алгоритм вычисления*/
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	/*выбор тегов html и body (основных тегов в html)*/
+	height: 100%; /*высота тела страници отнасительно окна браузера*/
+	width: 100%; /*ширина тела страници отнасительно окна браузера*/
+	font-size: 100%; /*размер текста отнасительно его исходного значения*/
+	line-height: 1;
+	font-size: 14px; /*(присвоение всемутексту исходное значение)размер текста в пикселях*/
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/*выбор (перечисление всех заоголвков через запятую) для присвоения их пораметрам значений*/
+	font-size: inherit; /*стандартизируется размер текста для всех видлв заголовков*/
+	font-weight: 400;
+} /*стандартизируется жирный шрифт для всех заголовков и состовляет 400 где: максимуи 900 (сапмый жирный шрифт); минимум 100 (самый тонкий шрифт)*/
+/*создание переменных*/
+:root {
+	--background-color: rgb(41, 44, 52);
+	--background-color-html: rgb(241, 101, 41);
+	--background-color-css: rgb(54, 157, 214);
+	--background-color-js: rgb(247, 224, 29);
+	--background-color-php: rgb(101, 133, 204);
+	--background-color-whiter: rgb(241, 237, 226);
+}
+/*--------------------*/
